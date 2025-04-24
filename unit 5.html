@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhoomi Singh | Portfolio Slides</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #121212; color: #fff; overflow-x: hidden; }
+    header { background: #1f1f1f; padding: 10px 20px; position: fixed; top: 0; width: 100%; z-index: 1000; }
+    .logo { color: #fff; font-size: 24px; text-decoration: none; }
+    .swiper { height: 100vh; }
+    .swiper-slide { display: flex; align-items: center; justify-content: center; padding: 60px 20px; }
+    .section { max-width: 900px; text-align: center; background: #202020; padding: 30px; border-radius: 15px; box-shadow: 0 0 20px rgba(255,255,255,0.05); }
+    h2, h3 { color: #ffd700; }
+    .skills img, .projects img, .cert img { height: 50px; margin: 10px; }
+    a { color: #00c6ff; text-decoration: none; }
+    .cert img { max-width: 100%; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="#" class="logo"><i class="fab fa-node-js"></i> Bhoomi</a>
+</header>
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <div class="section">
+        <h2>Hi There, I'm Bhoomi Singh</h2>
+        <p>Cybersecurity & Development Enthusiast</p>
+        <p>LinkedIn | GitHub | Instagram</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="section">
+        <h2>About Me</h2>
+        <p>B.Tech CSE | Cybersecurity & Software Developer. Passionate about development, cybersecurity and new technologies.</p>
+        <p>Email: bhoomisingh072@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="section skills">
+        <h2>Skills & Abilities</h2>
+        <div>
+          <img src="https://img.icons8.com/color/48/c-plus-plus-logo.png" alt="C++" />
+          <img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" alt="Java" />
+          <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML" />
+          <img src="https://img.icons8.com/color/48/css3.png" alt="CSS" />
+          <img src="https://img.icons8.com/color/48/python--v1.png" alt="Python" />
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="section">
+        <h2>Education</h2>
+        <p><strong>B.Tech CSE</strong> - Lovely Professional University (2022-Present)</p>
+        <p><strong>Intermediate</strong> - ABIC Renukut (2020-2022)</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="section projects">
+        <h2>Projects</h2>
+        <p><strong>Student Management System:</strong> Java + MySQL</p>
+        <p><strong>Healthcare Web:</strong> HTML/CSS</p>
+        <p><strong>Snake Game:</strong> Python + Tkinter</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="section">
+        <h2>Achievements</h2>
+        <p>SIH Hackathon, Teaching Assistant - DSA, Real-world Projects</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="section cert">
+        <h2>Certifications</h2>
+        <p>DSA with C++ | Ethical Hacking | Cyber Security | Digital Forensics</p>
+        <img src="./assets/ba.png" alt="DSA Certificate" />
+        <img src="./assets/image.png" alt="Digital Forensic Certificate" />
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: false,
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    keyboard: { enabled: true },
+  });
+</script>
+
+</body>
+</html>

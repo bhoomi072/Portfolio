@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Bhoomi Singh</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+    .slide {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      scroll-snap-align: start;
+      padding: 2rem;
+      text-align: center;
+    }
+    .emoji {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    section {
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+    .slide:nth-child(even) { background-color: #fef3c7; }
+    .slide:nth-child(odd) { background-color: #fff7ed; }
+    h1, h2 {
+      color: #333;
+    }
+    .btn {
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #facc15;
+      border: none;
+      border-radius: 6px;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #eab308;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="slide" id="home">
+      <div class="emoji">👋</div>
+      <h1>Hi There, I'm Bhoomi Singh</h1>
+      <p>Cybersecurity & Development Enthusiast</p>
+      <a href="#about" class="btn">About Me</a>
+    </div>
+    <div class="slide" id="about">
+      <div class="emoji">🙋‍♀️</div>
+      <h2>About Me</h2>
+      <p>Computer Science student at LPU. Interested in software development, cybersecurity, and continuous learning.</p>
+    </div>
+    <div class="slide" id="skills">
+      <div class="emoji">💻</div>
+      <h2>Skills & Abilities</h2>
+      <p>C++, Java, Python, SQL, HTML, CSS, MySQL, GitHub</p>
+    </div>
+    <div class="slide" id="education">
+      <div class="emoji">🎓</div>
+      <h2>Education</h2>
+      <p>B.Tech CSE - Lovely Professional University</p>
+      <p>Intermediate - ABIC Renukut</p>
+    </div>
+    <div class="slide" id="projects">
+      <div class="emoji">🛠️</div>
+      <h2>Projects</h2>
+      <p>Student Management System (Java)</p>
+      <p>Healthcare Web Design (HTML/CSS)</p>
+      <p>Snake Game (Python)</p>
+    </div>
+    <div class="slide" id="certifications">
+      <div class="emoji">📜</div>
+      <h2>Certifications</h2>
+      <p>DSA with C++, Digital Forensics, Cybersecurity, Ethical Hacking</p>
+    </div>
+    <div class="slide" id="contact">
+      <div class="emoji">📬</div>
+      <h2>Contact Me</h2>
+      <p>Email: bhoomisingh072@gmail.com</p>
+      <p>Location: Punjab, India</p>
+    </div>
+  </section>
+</body>
+</html>
